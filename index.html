@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-description">
+            <h1 id="title">Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <!--FORM-->
+        <form action="/index.html" id="survey-form">
+
+            <!--NAME-->
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <!--EMAIL-->
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+            <!--AGE-->
+            <label for="number" id="number-label">Age <span class="
+                optional">(optinal)</span></label>
+            <input type="number" name="number"  id="number" min="10" max="99" placeholder="Age">
+
+            <!--CURRENT ROLE-->
+            <label for="current-role" id="role-label">Which option best describes your current role?</label>
+            <select name="current-role" id="dropwdown" required>
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!--RECOMMEND TO A FRIEND-->
+            <label for="" id="recommend">Wold you recommend X Course to a friend? </label>
+            <div class="options">
+                <div class="radio-definitely">
+                    <input type="radio" name="recommend-option" id="definitely" checked>
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div class="maybe-radio">
+                    <input type="radio" name="recommend-option" id="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+    
+                <div class="notsure-radio">
+                    <input type="radio" name="recommend-option" id="not-sure">
+                    <label for="not-sure">Not-sure</label>
+                </div>
+            </div>
+            
+
+            <!--WHAT WOULD TO BE IMPROVED-->
+            <label for="" id="recommend">What would you like to see improved? <span>(Check all that apply)</span>
+            </label>
+            <div class="options">
+                <div class="front-end">
+                    <input type="checkbox" name="front-end" id="front-end">
+                    <label for="front-end">Front-End Projects</label>
+                </div>
+    
+                <div class="back-end">
+                    <input type="checkbox" name="back-end" id="back-end">
+                    <label for="back-end">Back-End Projects</label>
+                </div>
+    
+                <div class="challenges">
+                    <input type="checkbox" name="challenges" id="challenges">
+                    <label for="challenges">Challenges</label>
+                </div>
+    
+                <div class="videos">
+                    <input type="checkbox" name="videos" id="videos">
+                    <label for="videos">Videos</label>
+                </div>
+    
+                <div class="wiki">
+                    <input type="checkbox" name="wiki" id="wiki">
+                    <label for="wiki">Wiki</label>
+                </div>
+    
+                <div class="forum">
+                    <input type="checkbox" name="forum" id="forum">
+                    <label for="forum">Forum</label>
+                </div>
+    
+                <div class="additional-courses">
+                    <input type="checkbox" name="additional-courses" id="additional-courses" class="input">
+                    <label for="additional-courses">Additional Courses</label>
+                </div>
+            </div>
+           
+
+            <!--COMMENTS OR SUGGESTIONS-->
+            <label for="">Any comments or suggestions?</label>
+            <textarea name="msg" id="msg" cols="5" rows="10" placeholder="Enter your comment here..."
+                style="height: 200px; width: auto; resize: none;"></textarea>
+
+            <input type="submit" value="Submit" id="submit-btn">
+        </form>
+    </div>
+
+</body>
+
+</html>
