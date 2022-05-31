@@ -115,3 +115,10 @@ textarea:focus, input:focus{
 #submit-btn:hover{
     background-color: green;
 }
+
+@media (max-width: 800px){
+    form{
+        width: 90%;
+        padding: 10px 20px;
+    }
+}
